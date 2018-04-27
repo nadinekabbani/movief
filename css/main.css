@@ -1,0 +1,145 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+
+
+ .Container1 {
+   display: grid;
+   grid-template-columns: 0.5fr 1fr 0.5fr;
+   grid-gap: 50px;
+   background-color: rgba(250, 203, 190);
+   font-family: sans-serif;
+
+ }
+
+ /* Mobile Screens */
+ .grid1 {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-gap: 20px;
+ }
+
+ .grid2 {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-gap: 20px;
+ }
+
+ .grid3 {
+   display: grid;
+   grid-template-columns: 1fr ;
+   grid-gap: 20px;
+ }
+
+
+ /* Medium Screens */
+ @media (min-width: 600px) {
+   .grid1 {
+     /* Set grid columns to 2 */
+     grid-template-columns: 1fr 1fr;
+
+   }
+
+   .grid2 {
+     display: grid;
+     grid-template-columns: 1fr 3fr ;
+     grid-gap: 20px;
+   }
+
+   .grid3 {
+     display: grid;
+     grid-template-columns: 1fr ;
+     grid-gap: 20px;
+   }
+ }
+
+ /* Large Screens */
+ @media (min-width: 800px) {
+   .grid1 {
+     /* Set grid columns to 4 */
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     /* Set a maximum width and center it */
+     max-width: 800px;
+     margin: 0 auto;
+     margin-bottom: 20px;
+   }
+   .grid2 {
+     display: grid;
+     grid-template-columns: 1fr 3fr;
+     grid-gap: 20px;
+     max-width: 800px;
+     margin: 0 auto;
+   }
+
+
+ .grid3 {
+   display: grid;
+   grid-template-columns: 1fr ;
+   grid-gap: 20px;
+   align-items: center;
+   max-width: 800px;
+   margin: 0 auto;
+ }
+}
+
+.text1{
+  text-align: center;
+}
+.BYT {
+background-color: white;
+color: rgba(237, 66, 51);
+padding: 10px 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 12px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 8px;
+margin-top: 30px;
+margin-left: 30px;
+}
+
+ /* Serie Info
+ .Container3 {
+   display: grid;
+   grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
+   grid-gap: 20px;
+   background-color: rgba(250, 203, 190);
+   font-family: sans-serif;
+ } */
+
+ /* Buy tickets
+ .Container4 {
+   display: grid;
+   grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
+   grid-gap: 5 px;
+   background-color: rgba(250, 203, 190);
+   font-family: sans-serif;
+ } */
+
+ .itemA {
+   grid-column: 2/-2;
+   text-align: center;
+   font-weight: 10;
+   letter-spacing: 10px;
+   font-size: 30px;
+   text-transform: uppercase;
+   color: rgba(237, 66, 51);
+   text-decoration: underline;
+ }
+
+ .itemB {
+   grid-column: 2/-2;
+   text-align: center;
+   font-weight: 20;
+   letter-spacing: 5px;
+   font-size: 20px;
+   text-transform: lowercase;
+   color: rgba(237, 66, 51);
+ }
+
+ .picture1 {
+   max-width: 100%;
+   align-items: center;
+ }
